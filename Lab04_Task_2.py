@@ -1,5 +1,20 @@
 import os
 
+# Print my header information
+print("\n")
+print("\"1 December 1918\" University of Alba Iulia")
+print("Computer Science Department")
+print("Course: Fundamental Algorithms")
+print("Lab 4: Question 2 - Addition and Multiplication of Large Numbers")
+print("By: Osatohanmwen Davidson Ikponmwenosa")
+print("\n")
+
+# ---------------------------------------------------------
+# 2. Addition and Multiplication of Large Numbers 
+# Extend the project with a Python application that performs operations on two non-negative 
+# integers, each containing at most 200 digits. 
+# Example: for the numbers 999 and 2, the sum is 1001 and the product is 1998. 
+# ---------------------------------------------------------
 
 def is_valid_number(text):
   """Checks if the text is a valid non-negative number up to 200 digits."""
