@@ -1,0 +1,1 @@
+Develop a Python application that, for an even number entered by the user, finds the decompositions described by Goldbach's conjecture: every even integer greater than 2 can be  expressed as the sum of two prime numbers.
