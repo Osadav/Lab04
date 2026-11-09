@@ -15,10 +15,10 @@ print("\n")
 # ---------------------------------------------------------
 
 # Declare a variable to hold the user input
-target = int(input("Enter an even number greater than 2: "))
+evenNumber = int(input("Enter an even number greater than 2: "))
 
 # Define a function to check if a number is prime
-def is_prime(n):
+def checkPrime(n):
     """Check if a number is prime."""
     if n < 2:
         return False
@@ -28,22 +28,22 @@ def is_prime(n):
     return True
 
 # Define a function to find all pairs of prime numbers that sum to the given even number
-def goldbach_pairs(even_number):
+def number_pairs(even_number):
     """Finds all pairs of prime numbers that sum to the given even number."""
     if even_number <= 2 or even_number % 2 != 0:
         return "Please provide an even integer greater than 2."
     
     # Initialize a list to hold the pairs of prime numbers
-    pairs = []
+    pairsList = []
 
     # Loop through all numbers from 2 to even_number // 2 to find prime pairs
     for p1 in range(2, (even_number // 2) + 1):
-        if is_prime(p1):
+        if checkPrime(p1):
             p2 = even_number - p1
-            if is_prime(p2):
-                pairs.append((p1, p2))
+            if checkPrime(p2):
+                pairsList.append((p1, p2))
                 
-    return pairs
+    return pairsList
 
 # Call the function and print the result
-print(f"Prime pairs for {target}: {goldbach_pairs(target)}")
+print(f"Prime pairs for {evenNumber}: {number_pairs(evenNumber)}")
